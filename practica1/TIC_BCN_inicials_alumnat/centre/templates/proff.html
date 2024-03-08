@@ -1,0 +1,26 @@
+{% extends 'index_centre.html' %}
+{% block content %}
+<div>
+    <p>Benvingut a la pàgina de professors de la app Prova!</p>
+    <p>Dades dels professors:</p>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Cognom</th>
+            <th>Edat</th>
+            <th>Rol</th>
+            <th>Curs</th>
+        </tr>
+        {% for professor in prof %}
+        <tr>
+            <td>{{ prof.id }}</td>
+            <td>{{ prof.name }}</td>
+            <td>{{ prof.surname }}</td>
+            <td>{{ prof.age }}</td>
+            <td>{{ prof.rol }}</td>
+            <td>{{ prof.curs }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

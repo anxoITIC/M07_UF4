@@ -7,7 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    {% include "head/header.html" %}
+    
     <h1>Primer projecte</h1>
-    <p>Benvinguts a la primera app</p>
+
+    {% block content %}
+
+    
+    {% endblock %}
 </body>
 </html>

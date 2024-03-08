@@ -1,0 +1,26 @@
+{% extends 'index_centre.html' %}
+{% block content %}
+<div>
+    <p>Benvingut a la pàgina d'usuaris de la app Prova!</p>
+    <p>Dades dels usuaris:</p>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Cognom</th>
+            <th>Edat</th>
+            <th>Rol</th>
+            <th>Curs</th>
+        </tr>
+        {% for alumne in alumn %}
+        <tr>
+            <td>{{ alumn.id }}</td>
+            <td>{{ alumn.name }}</td>
+            <td>{{ alumn.surname }}</td>
+            <td>{{ alumn.age }}</td>
+            <td>{{ alumn.rol }}</td>
+            <td>{{ alumn.curs }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
