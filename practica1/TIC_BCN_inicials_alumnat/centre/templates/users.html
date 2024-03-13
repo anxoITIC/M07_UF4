@@ -1,7 +1,7 @@
 {% extends 'index_centre.html' %}
 {% block content %}
 <div>
-    <p>Benvingut a la pàgina d'usuaris de la app Prova!</p>
+    <h1>Benvingut a la pàgina d'usuaris de la app Prova!</h1>
     <p>Dades dels usuaris:</p>
     <table>
         <tr>
@@ -11,6 +11,7 @@
             <th>Edat</th>
             <th>Rol</th>
             <th>Curs</th>
+            <th>Accions</th>
         </tr>
         {% for alumne in alumne %}
         <tr>
@@ -20,6 +21,7 @@
             <td>{{ alumne.age }}</td>
             <td>{{ alumne.rol }}</td>
             <td>{{ alumne.curs }}</td>
+            <td><a href="{% url 'info_user' alumne.id %}">INFO</a></td>
         </tr>
         {% endfor %}
     </table>
