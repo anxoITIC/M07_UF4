@@ -14,13 +14,14 @@
         </tr>
         {% for professor in prof %}
         <tr>
-            <td>{{ prof.id }}</td>
-            <td>{{ prof.name }}</td>
-            <td>{{ prof.surname }}</td>
-            <td>{{ prof.age }}</td>
-            <td>{{ prof.rol }}</td>
-            <td>{{ prof.curs }}</td>
+            <td>{{ professor.id }}</td>
+            <td>{{ professor.name }}</td>
+            <td>{{ professor.surname }}</td>
+            <td>{{ professor.age }}</td>
+            <td>{{ professor.rol }}</td>
+            <td>{{ professor.curs }}</td>
         </tr>
+        {% endfor %}
     </table>
 </div>
 {% endblock %}

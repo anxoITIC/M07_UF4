@@ -14,13 +14,14 @@
         </tr>
         {% for alumne in alumn %}
         <tr>
-            <td>{{ alumn.id }}</td>
-            <td>{{ alumn.name }}</td>
-            <td>{{ alumn.surname }}</td>
-            <td>{{ alumn.age }}</td>
-            <td>{{ alumn.rol }}</td>
-            <td>{{ alumn.curs }}</td>
+            <td>{{ alumne.id }}</td>
+            <td>{{ alumne.name }}</td>
+            <td>{{ alumne.surname }}</td>
+            <td>{{ alumne.age }}</td>
+            <td>{{ alumne.rol }}</td>
+            <td>{{ alumne.curs }}</td>
         </tr>
+        {% endfor %}
     </table>
 </div>
 {% endblock %}
