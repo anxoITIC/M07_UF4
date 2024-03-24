@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from django.template import loader
 from django.template import Context, loader
 from django.shortcuts import render
+from .forms import PersonForm
+
+
 
 def index(request):
     professor = {"name": "Roger", "surname": "Sobrino", "age": "42"}
@@ -63,3 +66,10 @@ def info_prof(request, professor_id):
             break
 
     return render(request, 'info_prof.html', {'professor': profe_concret})
+
+
+#per renderitzar el formulari
+def formulari(request):
+    formulari = PersonForm()
+    context = {'form':formulari}
+    return render(request, 'formulari.html', context)
