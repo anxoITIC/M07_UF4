@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Información del Usuario</title>
+</head>
+<body>
+    {% include "head/header.html" %}
+    
+    <h1>Información del Usuario</h1>
+
+    <p>ID: {{ alumne.id }}</p>
+    <p>Nombre: {{ alumne.name }}</p>
+    <p>Apellido: {{ alumne.surname }}</p>
+    <p>Edad: {{ alumne.age }}</p>
+    <p>Rol: {{ alumne.rol }}</p>
+    <p>Curs: {{ alumne.curs }}</p>
+
+</body>
+</html>
